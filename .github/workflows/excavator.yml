@@ -1,0 +1,17 @@
+# Checks chanto's GitHub releases every 4 hours and commits the new version
+# and hash to bucket/chanto.json (Scoop's standard bucket updater).
+name: Excavator
+on:
+  schedule:
+    - cron: "20 */4 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  excavate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: ScoopInstaller/GithubActions@5bceeda181721d9d10a18fdcc3ddca6f33467ae6 # v3.0.0
+        env:
+          SKIP_UPDATED: 1
