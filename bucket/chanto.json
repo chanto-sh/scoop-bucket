@@ -1,13 +1,13 @@
 {
-    "version": "0.1.12",
+    "version": "0.1.13",
     "description": "A fast, lean coding agent for your terminal.",
     "homepage": "https://chanto.sh",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/chanto-sh/chanto/releases/download/v0.1.12/chanto-v0.1.12-x86_64-pc-windows-msvc.zip",
-            "hash": "8e59282b8a1e747fa54d4d7849e98b64ef2b4c8113a576562558561f67e6b6bf",
-            "extract_dir": "chanto-v0.1.12-x86_64-pc-windows-msvc"
+            "url": "https://github.com/chanto-sh/chanto/releases/download/v0.1.13/chanto-v0.1.13-x86_64-pc-windows-msvc.zip",
+            "hash": "ff454abd5967af0fbbec3bd89db43dfd3239d3a8479e53e9e312fbd85594f320",
+            "extract_dir": "chanto-v0.1.13-x86_64-pc-windows-msvc"
         }
     },
     "bin": "chanto.exe",
